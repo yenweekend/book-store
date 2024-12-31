@@ -1,4 +1,9 @@
 const urls = {
-    HOMEPAGE: '/'
+    HOMEPAGE: '/',
+    BROWSEBOOK:'/browse-book',
+    CART:'/cart',
+    ORDERHISTORY:'/order-history',
+    LOGIN:'/login',
+    REGISTER:'/register',
 };
 export default urls

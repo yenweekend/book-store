@@ -3,13 +3,22 @@ import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import urls from "./utils/paths";
-import { Home } from './pages';
+import { Home, UserMaster,BrowseBook ,Cart, OrderHistory,Login, Register} from './pages';
+
 function App() {
 
   return  <>
   <Routes>
     <Route>
-      <Route path={urls.HOMEPAGE} element={<Home />}></Route>
+    <Route path={urls.LOGIN} element={<Login/>}></Route>
+    <Route path={urls.REGISTER} element={<Register/>}></Route>
+      <Route path={"/"} element={<UserMaster />}>
+        <Route path='' element={<Home/>}></Route>
+        <Route path={urls.CART} element={<Cart/>}></Route>
+        <Route path={urls.BROWSEBOOK} element={<BrowseBook/>}></Route>
+        <Route path={urls.ORDERHISTORY} element={<OrderHistory/>}></Route>
+   
+      </Route>
       <Route path="/*" element={<Home />}></Route>
     </Route>
   </Routes>
