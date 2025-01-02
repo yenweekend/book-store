@@ -1,0 +1,13 @@
+.ant-menu {
+  height: 100% !important;
+}
+.admin-container {
+  display: flex;
+}
+.admin-menu {
+  flex-shrink: 0;
+}
+.content {
+  flex: 1 1 auto;
+  background-color: red;
+}
