@@ -52,6 +52,7 @@ const Master = () => {
           </div>
         </div>
         <div className="content">
+          <div className="admin-header"></div>
           <Outlet />
         </div>
       </div>
